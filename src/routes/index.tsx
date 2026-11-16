@@ -10,6 +10,7 @@ import coffeeLatte from "@/assets/eterno/coffee-latte.jpg.asset.json";
 import daggerTattoo from "@/assets/eterno/dagger-tattoo.jpg.asset.json";
 import earPiercing from "@/assets/eterno/ear-piercing.jpg.asset.json";
 import floralTattoo from "@/assets/eterno/floral-tattoo.jpg.asset.json";
+import heroTattoo from "@/assets/eterno/hero-tattoo.jpg.asset.json";
 import interior from "@/assets/eterno/interior.jpg.asset.json";
 import studioSession from "@/assets/eterno/studio-session.jpg.asset.json";
 import turtleTattoo from "@/assets/eterno/turtle-tattoo.jpg.asset.json";
@@ -84,8 +85,8 @@ function Index() {
 
       <section id="inicio" className="relative isolate min-h-[620px] overflow-hidden bg-studio-green sm:min-h-[690px]">
         <img
-          src={interior.url}
-          alt="Interior de Estudio Eterno, un espacio creativo en Tulum"
+          src={heroTattoo.url}
+          alt="Tatuaje de alas realizado en Estudio Eterno"
           className="absolute inset-0 -z-20 h-full w-full object-cover object-center"
         />
         <div className="absolute inset-0 -z-10 bg-studio-overlay" />
