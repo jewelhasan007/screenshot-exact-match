@@ -70,6 +70,22 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-studio-green: var(--studio-green);
+  --color-studio-green-foreground: var(--studio-green-foreground);
+  --color-studio-red: var(--studio-red);
+  --color-studio-red-foreground: var(--studio-red-foreground);
+  --color-studio-highlight: var(--studio-highlight);
+  --color-studio-soft: var(--studio-soft);
+  --color-studio-overlay: var(--studio-overlay);
+  --color-studio-hero-foreground: var(--studio-hero-foreground);
+  --color-studio-hero-muted: var(--studio-hero-muted);
+  --color-studio-outline: var(--studio-outline);
+  --color-studio-glass: var(--studio-glass);
+  --color-studio-glass-hover: var(--studio-glass-hover);
+  --color-studio-caption: var(--studio-caption);
+  --color-studio-caption-foreground: var(--studio-caption-foreground);
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-sans: "Manrope", sans-serif;
 }
 
 :root {
@@ -106,6 +122,20 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --studio-green: oklch(0.31 0.045 163);
+  --studio-green-foreground: oklch(0.97 0.015 85);
+  --studio-red: oklch(0.57 0.17 28);
+  --studio-red-foreground: oklch(0.99 0.005 80);
+  --studio-highlight: oklch(0.82 0.13 87);
+  --studio-soft: oklch(0.95 0.025 92);
+  --studio-overlay: oklch(0.12 0.025 165 / 78%);
+  --studio-hero-foreground: oklch(0.98 0.01 85);
+  --studio-hero-muted: oklch(0.9 0.02 85 / 82%);
+  --studio-outline: oklch(0.98 0.01 85 / 30%);
+  --studio-glass: oklch(0.98 0.01 85 / 10%);
+  --studio-glass-hover: oklch(0.98 0.01 85 / 20%);
+  --studio-caption: oklch(0.15 0.025 163 / 86%);
+  --studio-caption-foreground: oklch(0.98 0.01 85);
 }
 
 .dark {
@@ -151,5 +181,11 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
   }
 }
