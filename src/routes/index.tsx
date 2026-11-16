@@ -1,18 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDownRight, ArrowUpRight, Instagram, MapPin, Sparkles } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import alebrijeArt from "@/assets/eterno/alebrije-art.jpg.asset.json";
 import blackworkTattoo from "@/assets/eterno/blackwork-tattoo.jpg.asset.json";
 import cafeCocktail from "@/assets/eterno/cafe-cocktail.jpg.asset.json";
-import cafeDrink from "@/assets/eterno/cafe-drink.jpg.asset.json";
 import coffeeLatte from "@/assets/eterno/coffee-latte.jpg.asset.json";
 import daggerTattoo from "@/assets/eterno/dagger-tattoo.jpg.asset.json";
 import earPiercing from "@/assets/eterno/ear-piercing.jpg.asset.json";
 import floralTattoo from "@/assets/eterno/floral-tattoo.jpg.asset.json";
 import heroTattoo from "@/assets/eterno/hero-tattoo.jpg.asset.json";
-import interior from "@/assets/eterno/interior.jpg.asset.json";
-import studioSession from "@/assets/eterno/studio-session.jpg.asset.json";
 import turtleTattoo from "@/assets/eterno/turtle-tattoo.jpg.asset.json";
 import wingsTattoo from "@/assets/eterno/wings-tattoo.jpg.asset.json";
 
@@ -67,13 +64,19 @@ function Index() {
               TATTOO · CAFÉ · ARTE
             </span>
           </a>
-          <Button asChild size="sm" className="shrink-0 bg-studio-red text-studio-red-foreground hover:bg-studio-red/90">
-            <a href="https://www.instagram.com/estudio.eterno/" target="_blank" rel="noreferrer">
-              <Instagram aria-hidden="true" />
-              <span className="hidden sm:inline">Escríbenos</span>
-              <span className="sm:hidden">Contacto</span>
-            </a>
-          </Button>
+          <a
+            className={buttonVariants({
+              size: "sm",
+              className: "shrink-0 bg-studio-red text-studio-red-foreground hover:bg-studio-red/90",
+            })}
+            href="https://www.instagram.com/estudio.eterno/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Instagram aria-hidden="true" />
+            <span className="hidden sm:inline">Escríbenos</span>
+            <span className="sm:hidden">Contacto</span>
+          </a>
           <nav aria-label="Navegación principal" className="col-span-2 -mx-4 mt-4 flex gap-6 overflow-x-auto border-t border-border px-4 pt-3 text-xs font-semibold sm:mx-0 sm:mt-0 sm:border-0 sm:px-0 sm:pt-0 sm:text-sm">
             <a className="shrink-0 transition-colors hover:text-studio-red" href="#estudio">El estudio</a>
             <a className="shrink-0 transition-colors hover:text-studio-red" href="#servicios">Servicios</a>
@@ -102,14 +105,28 @@ function Index() {
               Un estudio para expresarte, hacer una pausa y conectar con el arte. Te esperamos en el corazón de Tulum.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="bg-studio-red text-studio-red-foreground hover:bg-studio-red/90">
-                <a href="https://www.instagram.com/estudio.eterno/" target="_blank" rel="noreferrer">
-                  Agenda tu visita <ArrowUpRight aria-hidden="true" />
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-studio-outline bg-studio-glass text-studio-hero-foreground hover:bg-studio-glass-hover hover:text-studio-hero-foreground">
-                <a href="#servicios">Conoce el estudio <ArrowDownRight aria-hidden="true" /></a>
-              </Button>
+              <a
+                className={buttonVariants({
+                  size: "lg",
+                  className: "bg-studio-red text-studio-red-foreground hover:bg-studio-red/90",
+                })}
+                href="https://www.instagram.com/estudio.eterno/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Agenda tu visita <ArrowUpRight aria-hidden="true" />
+              </a>
+              <a
+                className={buttonVariants({
+                  size: "lg",
+                  variant: "outline",
+                  className:
+                    "border-studio-outline bg-studio-glass text-studio-hero-foreground hover:bg-studio-glass-hover hover:text-studio-hero-foreground",
+                })}
+                href="#servicios"
+              >
+                Conoce el estudio <ArrowDownRight aria-hidden="true" />
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 border-t border-studio-outline pt-5 text-sm sm:flex sm:items-end sm:justify-between">
@@ -203,11 +220,17 @@ function Index() {
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-studio-highlight">Aquí te esperamos</p>
             <h2 className="max-w-xl font-display text-5xl leading-[1.04] sm:text-7xl">Nos vemos en Tulum.</h2>
             <p className="mt-5 max-w-md leading-7 text-studio-hero-muted">Pasa a conocernos o escríbenos para conversar sobre tu próxima visita.</p>
-            <Button asChild size="lg" className="mt-7 bg-studio-red text-studio-red-foreground hover:bg-studio-red/90">
-              <a href="https://www.instagram.com/estudio.eterno/" target="_blank" rel="noreferrer">
-                <Instagram aria-hidden="true" /> Contactar por Instagram <ArrowUpRight aria-hidden="true" />
-              </a>
-            </Button>
+            <a
+              className={buttonVariants({
+                size: "lg",
+                className: "mt-7 bg-studio-red text-studio-red-foreground hover:bg-studio-red/90",
+              })}
+              href="https://www.instagram.com/estudio.eterno/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Instagram aria-hidden="true" /> Contactar por Instagram <ArrowUpRight aria-hidden="true" />
+            </a>
           </div>
           <div className="grid content-start gap-7 border-t border-studio-outline pt-6 sm:border-l sm:border-t-0 sm:pl-9 sm:pt-0">
             <div>
